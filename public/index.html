@@ -49,20 +49,20 @@
       var userAgent = navigator.userAgent.toLowerCase();
 
       if (/android/.test(userAgent)) {
-        const appScheme = 'https://play.google.com/store/apps/details?id=com.idlemind.pimspointsapp/';
+        const appScheme = 'https://play.google.com/store/apps/details?id=com.idlemind.pimspointsapp';
         setTimeout(() => {
           window.location.href = appScheme;
         }, 3000);
       } else if (/iphone|ipod|ipad/.test(userAgent)) {
         const appScheme = 'pimspoints://';
-        const appStoreUrl = 'https://apps.apple.com/app/id808214524/';
+        const appStoreUrl = 'https://apps.apple.com/app/id808214524';
         window.location.href = appScheme;
         setTimeout(() => {
           window.location.href = appStoreUrl;
         }, 3000);
       }
       else {
-        window.location.href = "https://pimspoints.com/";
+        window.location.href = "https://pimspoints.com";
       }
     }
   </script>
@@ -72,10 +72,10 @@
   <div class=" container">
     <h1>Open PimsPoints</h1>
     <p>Looks like you haven't installed our app yet. Get the app to explore amazing features!</p>
-    <a href="https://play.google.com/store/apps/details?id=com.idlemind.pimspointsapp/" class="btn">Download on Google
+    <a href="https://play.google.com/store/apps/details?id=com.idlemind.pimspointsapp" class="btn">Download on Google
       Play</a>
     <br>
-    <a href="https://apps.apple.com/app/id808214524/" class="btn" style="background-color: #333;">Download on App
+    <a href="https://apps.apple.com/app/id808214524" class="btn" style="background-color: #333;">Download on App
       Store</a>
   </div>
 </body>
