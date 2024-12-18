@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.idlemind.pimspointsapp",
+            "sha256_cert_fingerprints": [
+                "8B:77:28:F5:49:A0:04:B2:8B:06:40:48:B1:85:25:92:04:00:FF:D2:96:BD:B0:CC:C9:A5:A1:02:40:FE:12:27"
+            ]
+        }
+    }
+]

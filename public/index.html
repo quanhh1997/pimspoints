@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Open our app to explore more features.">
+  <meta name="keywords" content="app link, deep link, download app">
+  <meta property="og:title" content="Open PimsPoints">
+  <meta property="og:description" content="Download our app for the best experience.">
+  <meta property="og:image" content="https://pimspoints.com/wp-content/uploads/2022/08/PimsPoints-logo.png">
+  <meta name="theme-color" content="#317EFB">
+  <title>Open Our App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <script>
+    function openApp() {
+      var userAgent = navigator.userAgent.toLowerCase();
+
+      if (/android/.test(userAgent)) {
+        const googlePlay = 'https://play.google.com/store/apps/details?id=com.idlemind.pimspointsapp';
+        window.location.href = appScheme;
+        setTimeout(() => {
+          window.location.href = googlePlay;
+        }, 3000);
+      } else if (/iphone|ipod|ipad/.test(userAgent)) {
+        const appScheme = 'pimspoints://';
+        const appStoreUrl = 'https://apps.apple.com/app/id808214524';
+        window.location.href = appScheme;
+        setTimeout(() => {
+          window.location.href = appStoreUrl;
+        }, 3000);
+      }
+      else {
+        window.location.href = "https://pimspoints.com";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class=" container">
+    <h1>Open PimsPoints</h1>
+    <p>Looks like you haven't installed our app yet. Get the app to explore amazing features!</p>
+    <a href="https://pimspoints-open-app.web.app/" class="btn">Download on Google
+      Play</a>
+    <br>
+    <a href="https://apps.apple.com/app/id808214524" class="btn" style="background-color: #333;">Download on App
+      Store</a>
+  </div>
+</body>
+
+</html>
